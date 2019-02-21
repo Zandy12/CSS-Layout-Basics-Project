@@ -1,0 +1,258 @@
+/*
+  If you get stuck, feel free to watch the follow-up videos where I'll show you one solution
+*/
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.25em;
+}
+
+.name a,
+.main-nav a {
+	text-align: center;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+/* ---- Layout Containers ---- */
+
+.banner {
+	color: #fff;
+	background: #3acec2;
+}
+
+.main-footer {
+	background: #d9e4ea;
+	padding: 2em 0;
+	margin-top: 30px;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+	.main-header {
+		margin-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.name, .main-nav {
+		display: inline;
+	} 
+
+	.main-header {
+		padding-right: 70px;
+		padding-left: 70px;
+	}
+
+	.main-nav li {
+		float: right;
+		margin-left: 65px;
+	}
+
+	.logo, .headline, .tagline, .main-footer {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
+	.logo {
+		padding-top: 35px;
+	}
+
+	.headline {
+		padding-top: -15px;
+	}
+
+	.tagline {
+		margin-top: -25px;
+		padding-bottom: 35px;
+		margin-bottom: 35px;
+	}
+
+	.col {
+		display: inline-block;
+		width: 33.3%;
+		margin-right: -5px;
+		vertical-align: top;
+		padding: 15px;
+		
+	}
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
+
+@media (min-width: 577px) and (max-width: 769px) {
+
+	.main-header {
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
+	.main-nav li {
+		display: inline;
+		margin-right: 5%; /* 45px*/
+	}
+
+	.main-nav li {
+		margin-left: 70px;
+	}
+
+	.logo, .headline, .tagline, .main-footer {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
+	.logo {
+		padding-top: 35px;
+	}
+
+	.headline {
+		padding-top: -15px;
+	}
+
+	.tagline {
+		margin-top: -25px;
+		padding-bottom: 35px;
+		margin-bottom: 35px;
+	}
+
+	h2 {
+		text-align: center;
+	}
+
+	.col {
+		margin-right: -5px;
+		padding: 15px;
+	}
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+
+}
+
+@media (max-width: 577px) {
+
+	.name {
+		padding-top: 5px;
+	}
+
+	.main-nav li {
+		margin-top: 5px;
+	}
+
+	.main-header {
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
+	.logo, .headline, .tagline, .main-footer {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
+	.logo {
+		padding-top: 35px;
+	}
+
+	.headline {
+		padding-top: -15px;
+	}
+
+	.tagline {
+		margin-top: -25px;
+		padding-bottom: 35px;
+		margin-bottom: 35px;
+	}
+
+	h2 {
+		text-align: center;
+	}
+
+	.col {
+		margin-right: -5px;
+		padding: 15px;
+	}
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
